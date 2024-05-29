@@ -1,11 +1,11 @@
 { "properties":{
     "house_rentals":[
     {
-        "id":"1",
+        "id":1,
         "name":"Paradise Villas",
         "description":"What am in",
         "image":"https://fedharentals.co.ke/wp-content/uploads/2024/02/2-bedrooms-apartments-fedha-estate-1024x768.jpeg",
-        "price":"50K",
+        "price":"ksh 200,000",
         "listed_by":"AMEC Limited",
         "images":[
             {
@@ -26,11 +26,11 @@
         ]
     },
     {
-        "id":"2",
+        "id":2,
         "name":"Five Star Villas",
         "description":"What am in",
         "image":"https://static.wixstatic.com/media/4ab965_9357b1265f5544f2aba75bf8bd5dc1f5~mv2.jpg/v1/crop/x_0,y_292,w_5472,h_3064/fill/w_528,h_282,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DJI_0287_JPG.jpg",
-        "price":"50K",
+        "price":"ksh 100,000",
         "listed_by":"AMEC Limited",
         "images":[
             {
@@ -51,11 +51,11 @@
         ]
     },
     {
-        "id":"3",
+        "id":3,
         "name":"Eden Ville Villas",
         "description":"What am in",
         "image":"https://res.cloudinary.com/hao-finder/image/upload/c_fill,w_1000/properties/Bedsitters-_One-_bedroom_houses_for_rent_in_Malindi_-0018904_gmrjfh",
-        "price":"50K",
+        "price":"ksh 250,000",
         "listed_by":"AMEC Limited",
         "images":[
             {
@@ -78,7 +78,7 @@
     ],
     "house_sales":[
     {
-        "id":"1",
+        "id":1,
         "name":"Stamet Villas",
         "description":"What am in",
         "image":"https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg",
@@ -107,7 +107,7 @@
         ]
     },
     {
-        "id":"2",
+        "id":2,
         "name":"green ville Villas",
         "description":"What am in",
         "image":"https://cdn.thecoolist.com/wp-content/uploads/2022/01/Types-of-Houses.png",
@@ -136,7 +136,7 @@
         ]
     },
     {
-        "id":"3",
+        "id":3,
         "name":"RedHill Villas",
         "description":"What am in",
         "image":"https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Modern-House-With-Large-Pool-AdobeStock-127770833-Copy.jpg",
@@ -167,7 +167,7 @@
     ],
     "apartments":[
         {
-        "id":"1",
+        "id":1,
         "name":"canaan apartments",
         "description":"What am in",
         "image":"https://ssl.cdn-redfin.com/v524.2.2/images/merch/splitScreenHeroImages/Rentals_LP_Hero_Mobile.jpg",
@@ -196,7 +196,7 @@
         ]
     },
     {
-        "id":"2",
+        "id":2,
         "name":"Huston apartments",
         "description":"What am in",
         "image":"https://apartmentsinheightshouston.com/wp-content/uploads/2018/09/apartments-in-the-heights-houston-welcome-to-an-apartment-complex-with-balconies.jpg",
@@ -225,7 +225,7 @@
         ]
     },
     {
-        "id":"3",
+        "id":3,
         "name":"Naimo Apartments",
         "description":"What am in",
         "image":"https://img.zumpercdn.com/730350661/1280x960?auto=format",

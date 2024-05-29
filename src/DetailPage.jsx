@@ -6,12 +6,13 @@ const DetailPage = () => {
   const [property, setProperty] = useState(null);
   const [error, setError] = useState('');
 console.log(type)
+
   useEffect(() => {
     const fetchProperty = async () => {
       try {
         const response = await fetch('http://localhost:3000/properties');
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
        
         const propertyId = parseInt(id);
         //console.log(type);
@@ -57,12 +58,39 @@ console.log(type)
   return (
     <div>
       <h1>{property.name}</h1>
-      <p>{property.address}</p>
-      <div>
-        {property.images.map((image, index) => (
-          <img key={index} src={image} alt={`${property.name} ${index + 1}`} />
+      {/* <div>
+        {property.images.map((image1, index) => (
+          <img key={index} src={image1} alt={`${property.name} ${index + 1}`} />
         ))}
+      </div> */}
+      <div>
+      <img src="https://s42814.pcdn.co/wp-content/uploads/2012/08/img-01-kitchen-scaled.jpg.optimal.jpg" alt={property.name} width="30%" height="40%"/>
+      <img src="https://aquantam.co.ke/wp-content/uploads/2023/10/DSCN8030-scaled.jpg" alt={property.name} width="40%" height="40%"/>
+      <img src="https://i.pinimg.com/736x/c6/77/e3/c677e3792f5ea3cabebb865052a07a0b.jpg" alt={property.name} width="30%" height="30%"/>
+      <img src="https://www.nawy.com/blog/wp-content/uploads/2022/07/interior-design-768x432.jpg" alt={property.name} width="45%" height="35%"/>
+      <img src="https://i.pinimg.com/736x/c6/77/e3/c677e3792f5ea3cabebb865052a07a0b.jpg" alt={property.name} width="40%" height="40%"/>
+
+
+
+
+
       </div>
+      <h1>HOUSE DETAILS</h1>
+     
+        <p>{property.name}</p>
+        <p>{property.image1}</p>
+        <p>{property.price}</p>
+        <p>{property.description}</p>
+
+        <h1>Amenities</h1>
+       <ol>
+        <li>Master Ensuite</li>
+        <li>SWimming pool</li>
+        <li>Parking</li>
+        <li>pets Allowed</li>
+
+       </ol>
+    
     </div>
   );
 };
