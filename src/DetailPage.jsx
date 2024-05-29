@@ -22,10 +22,10 @@ console.log(type)
             console.log(propertyId, foundProperty);
             break;
           case 'apartment':
-            foundProperty = data.apartments.find(item => item.id === parseInt(id, 10));
+            foundProperty = data.apartments.find(item => item.id === propertyId);
             break;
           case 'sales':
-            foundProperty = data.house_sales.find(item => item.id === parseInt(id, 10));
+            foundProperty = data.house_sales.find(item => item.id === propertyId);
             break;
           default:
             setError('Invalid property type');
