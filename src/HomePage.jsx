@@ -35,52 +35,69 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Properties</h1>
-      <div>
-        <h2>Rentals</h2>
+      <div className='main-banner'>
+          <p>GET A COMFY AND SUITABLE<br/> PLACE WITH US</p>
+      </div>
       
-          {properties.house_rentals.map(rental => (
-            <div key={rental.id}>
-              <Link to={`/rental/${rental.id}`}>
-                <h3>{rental.name}</h3>
-              </Link>
+      <h1>Properties</h1>
 
-              <img src={rental.image}/>
-            </div>
-          ))
+      <div >
+        <h2>Rentals</h2>
+          <div className='rents' >
+           {properties.house_rentals.map(rental => (
+                <div key={rental.id}>
+                  <Link to={`/rental/${rental.id}`}>
+                    <h3>{rental.name}</h3>
+                  </Link>
+
+                  <img src={rental.image} alt='rents' width="100%" height="60%"/>
+                </div>
+              ))
+            
+            }
+           </div>
         
-      }
       </div>
 
-      {/* <div>
-        <h2>sales</h2>
-      
-          {properties?.map(sales => (
-            <div key={sales.id}>
-              <Link to={`/sales/${sales.id}`}>
-                <h3>{sales.name}</h3>
+      <div>
+        <h2>House sales</h2>
+        <div className='rents'>
+        {properties.house_sales.map(sale => (
+            <div key={sale.id}>
+              <Link to={`/sale/${sale.id}`}>
+                <h3>{sale.name}</h3>
               </Link>
-              <p>{sales.image}</p>
+
+              <img src={sale.image} alt='sales'   width="100%" height="60%" />
             </div>
           ))
         
       }
+        </div>
+          
+          
       </div>
 
 
       <div>
         <h2>Apartments</h2>
-       
-          {properties?.map(apartment => (
+        <div className='rents' >
+        {properties.apartments.map(apartment => (
             <div key={apartment.id}>
               <Link to={`/apartment/${apartment.id}`}>
                 <h3>{apartment.name}</h3>
+                <img src={apartment.image} alt='apartments'  width="100%" height="60%"/>
+
               </Link>
-              <p>{apartment.image}</p>
+
             </div>
           ))
-        }
-      </div> */}
+        
+      }
+        </div>
+      
+          
+      </div>
      
     </div>
   );
