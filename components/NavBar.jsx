@@ -32,11 +32,11 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <NavLink to="/Home">JATE Estate</NavLink>
+          <NavLink to="/HomePage">JATE Estate</NavLink>
             <img src={logo} alt="JATE Estate" className="navbar-logo"/>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/Home" activeClassName="active">Home</NavLink>
+          <NavLink to="/HomePage" activeClassName="active">Home</NavLink>
           <NavLink to="/Blog" activeClassName="active">Blog</NavLink>
         </div>
         <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
