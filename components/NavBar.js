@@ -6,6 +6,8 @@ import logo from "../assets";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -17,7 +19,12 @@ const Navbar = () => {
 
   const handleSearchSubmit = (event)=>{
     event.preventDefault();
-    //console.log(searchQuerry)
+    const results =[
+        `Result for "${searchQuery}" 1`,
+        `Result for "${searchQuery}" 2`,
+        `Result for "${searchQuery}" 3`,
+    ];
+    searchResults(results);
   }
 
   return (
@@ -45,6 +52,15 @@ const Navbar = () => {
             />
             <button type="submit">Search</button>
           </form>
+          {searchResults.length > 0 &&(
+            <div className="search-results">
+                <ul>
+                    {searchResults.map((result, index)=>(
+                        <li key={index}>{result}</li>
+                    ))}
+                </ul>
+                </div>
+          )}
         </div>
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <span></span>
