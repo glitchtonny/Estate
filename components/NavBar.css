@@ -61,6 +61,24 @@
     background-color: #0056b3;
   }
   
+  .search-results{
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  .search-results ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .search-results li{
+    cursor: pointer;
+  }
   .navbar-toggle {
     display: none;
     cursor: pointer;
