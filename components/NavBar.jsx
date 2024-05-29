@@ -24,7 +24,9 @@ const Navbar = () => {
         `Result for "${searchQuery}" 2`,
         `Result for "${searchQuery}" 3`,
     ];
-    searchResults(results);
+    setSearchResults(results);
+    setSearchQuery("");
+
   }
 
   return (
