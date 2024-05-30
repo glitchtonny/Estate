@@ -56,40 +56,40 @@ console.log(type)
   }
 
   return (
-    <div>
-      <h1>{property.name}</h1>
-      {/* <div>
-        {property.images.map((image1, index) => (
-          <img key={index} src={image1} alt={`${property.name} ${index + 1}`} />
-        ))}
-      </div> */}
+  <div>
+        <h1>{property.name}</h1>
+        {/* <div>
+          {property.images.map((image1, index) => (
+            <img key={index} src={image1} alt={`${property.name} ${index + 1}`} />
+          ))}
+        </div> */}
       <div>
-      <img src="https://s42814.pcdn.co/wp-content/uploads/2012/08/img-01-kitchen-scaled.jpg.optimal.jpg" alt={property.name} width="30%" height="40%"/>
-      <img src="https://aquantam.co.ke/wp-content/uploads/2023/10/DSCN8030-scaled.jpg" alt={property.name} width="40%" height="40%"/>
-      <img src="https://i.pinimg.com/736x/c6/77/e3/c677e3792f5ea3cabebb865052a07a0b.jpg" alt={property.name} width="30%" height="30%"/>
-      <img src="https://www.nawy.com/blog/wp-content/uploads/2022/07/interior-design-768x432.jpg" alt={property.name} width="45%" height="35%"/>
-      <img src="https://i.pinimg.com/736x/c6/77/e3/c677e3792f5ea3cabebb865052a07a0b.jpg" alt={property.name} width="40%" height="40%"/>
-
-
-
-
+        <img src="https://s42814.pcdn.co/wp-content/uploads/2012/08/img-01-kitchen-scaled.jpg.optimal.jpg" alt={property.name} width="30%" height="40%"/>
+        <img src="https://aquantam.co.ke/wp-content/uploads/2023/10/DSCN8030-scaled.jpg" alt={property.name} width="40%" height="40%"/>
+        <img src="https://i.pinimg.com/736x/c6/77/e3/c677e3792f5ea3cabebb865052a07a0b.jpg" alt={property.name} width="30%" height="30%"/>
+        <img src="https://www.nawy.com/blog/wp-content/uploads/2022/07/interior-design-768x432.jpg" alt={property.name} width="45%" height="35%"/>
+        <img src="https://coralpi.com/wp-content/uploads/2024/04/HV-11.jpg" alt={property.name} width="40%" height="40%"/>
 
       </div>
-      <h2>HOUSE DETAILS</h2>
-     
-        <p>{property.name}</p>
-        <p>{property.image1}</p>
-        <p>{property.price}</p>
-        <p>{property.description}</p>
 
-        <h2>Amenities</h2>
-       <ol>
-        <li>Master Ensuite</li>
-        <li>SWimming pool</li>
-        <li>Parking</li>
-        <li>pets Allowed</li>
+      <div className='details'>
+          <h2>HOUSE DETAILS</h2>
+            
+            <p>{property.name}</p>
+            <p>{property.image1}</p>
+            <p>{property.price}</p>
+            <p className='about'>{property.description}</p>
 
-       </ol>
+            <h2>Amenities</h2>
+          <ol>
+            <li>Master Ensuite</li>
+            <li>SWimming pool</li>
+            <li>Parking</li>
+            <li>pets Allowed</li>
+
+          </ol>
+      </div>
+         
     
     </div>
   );

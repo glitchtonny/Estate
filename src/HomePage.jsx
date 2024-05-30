@@ -50,7 +50,7 @@ const HomePage = () => {
                     <h3>{rental.name}</h3>
                   </Link>
 
-                  <img src={rental.image} alt='rents' width="100%" height="60%"/>
+                  <img src={rental.image} alt='rents' width="100%" height="70%"/>
                 </div>
               ))
             
@@ -81,22 +81,26 @@ const HomePage = () => {
 
       <div>
         <h1>Apartments</h1>
-        <div className='rents' >
-        {properties.apartments.map(apartment => (
-            <div key={apartment.id}>
-              <Link to={`/apartment/${apartment.id}`}>
-                <h3>{apartment.name}</h3>
-                <img src={apartment.image} alt='apartments'  width="100%" height="60%"/>
+            <div className='rents' >
+               {properties.apartments.map(apartment => (
+                  <div key={apartment.id}>
+                    <Link to={`/apartment/${apartment.id}`}>
+                      <h3>{apartment.name}</h3>
+                      <img src={apartment.image} alt='apartments'  width="100%" height="60%"/>
 
-              </Link>
+                    </Link>
 
-            </div>
-          ))
-        
-      }
-        </div>
+                  </div>
+                ))
+              
+               }
+             </div>
       
           
+      </div>
+
+      <div>
+        <p>copyright by jate limited</p>
       </div>
      
     </div>
