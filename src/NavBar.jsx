@@ -35,16 +35,16 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <NavLink to="/">JATE Estate</NavLink>
+          <NavLink to="/HomePage">JATE Estate</NavLink>
             <img src={logo} alt="JATE Estate" className="navbar-logo"/>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/" activeClassName="active">HomePage</NavLink>
-          <NavLink to="/Blog" activeClassName="active">Blog</NavLink>
+          <NavLink to="/HomePage" activeClassName="active">{HomePage}</NavLink>
+          <NavLink to="/Blog" activeClassName="active">{Blog}</NavLink>
         </div>
         <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/login" activeClassName="active">Login</NavLink>
-          <NavLink to="/signup" activeClassName="active">Sign Up</NavLink>
+          <NavLink to="/Login" activeClassName="active">{Login}</NavLink>
+          <NavLink to="/Signup" activeClassName="active">{SignUp}</NavLink>
         </div>
         <div className="navbar-search">
           <form onSubmit={handleSearchSubmit}>
