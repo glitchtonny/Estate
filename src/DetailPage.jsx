@@ -75,14 +75,14 @@ console.log(type)
 
 
       </div>
-      <h1>HOUSE DETAILS</h1>
+      <h2>HOUSE DETAILS</h2>
      
         <p>{property.name}</p>
         <p>{property.image1}</p>
         <p>{property.price}</p>
         <p>{property.description}</p>
 
-        <h1>Amenities</h1>
+        <h2>Amenities</h2>
        <ol>
         <li>Master Ensuite</li>
         <li>SWimming pool</li>

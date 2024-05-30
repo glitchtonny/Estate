@@ -39,10 +39,10 @@ const HomePage = () => {
           <p>GET A COMFY AND SUITABLE<br/> PLACE WITH US</p>
       </div>
       
-      <h1>Properties</h1>
+      <h1>PROPERTIES</h1>
 
       <div >
-        <h2>Rentals</h2>
+        <h1>House Rentals</h1>
           <div className='rents' >
            {properties.house_rentals.map(rental => (
                 <div key={rental.id}>
@@ -60,7 +60,7 @@ const HomePage = () => {
       </div>
 
       <div>
-        <h2>House sales</h2>
+        <h1>House for sale</h1>
         <div className='rents'>
         {properties.house_sales.map(sale => (
             <div key={sale.id}>
@@ -80,7 +80,7 @@ const HomePage = () => {
 
 
       <div>
-        <h2>Apartments</h2>
+        <h1>Apartments</h1>
         <div className='rents' >
         {properties.apartments.map(apartment => (
             <div key={apartment.id}>
