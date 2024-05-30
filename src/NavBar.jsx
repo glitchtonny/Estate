@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
+import HomePage from './HomePage';
+//import Blog form ""
 import logo from "src/assets/logo for estate.png";
 
 const Navbar = () => {
@@ -37,7 +39,7 @@ const Navbar = () => {
             <img src={logo} alt="JATE Estate" className="navbar-logo"/>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/" activeClassName="active"><HomePage></HomePage></NavLink>
+          <NavLink to="/" activeClassName="active">HomePage</NavLink>
           <NavLink to="/Blog" activeClassName="active">Blog</NavLink>
         </div>
         <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
